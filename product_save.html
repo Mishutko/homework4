@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="ru-RU">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width-1130">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/modernizr-custom.js"></script>
+    <title>Title</title>
+</head>
+<body>
+<div class="wrapper">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
+                <form action="product_save.php" method="post" role="form">
+                    <legend>Create product</legend>
+
+                    <div class="form-group">
+                        <label for="title">title</label>
+                        <input type="text" class="form-control" name="title" id="title" placeholder="Input...">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="mark">mark</label>
+                        <input type="text" class="form-control" name="mark" id="mark" placeholder="Input...">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="count">count</label>
+                        <input type="text" class="form-control" name="count" id="count" placeholder="Input...">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="price">price ($)</label>
+                        <input type="text" class="form-control" name="price" id="price" placeholder="Input...">
+                    </div>
+
+                    <div class="form-group">
+                        <label>Description</label>
+                        <textarea class="form-control" placeholder="Message" name="description"></textarea>
+                    </div>
+
+                    <label>is_active?</label>
+                    <br>
+                    <select class="selectactive" name="selectactive" id="selectactive">
+                        <option value="TRUE">active</option>
+                        <option value="FALSE">not active</option>
+                    </select>
+                    <br>
+                    <br>
+
+                    <label>Выбор каталога</label>
+                    <br>
+                    <select class="selectcatgories" name="selectcatgories" id="selectcatgories">
+                        <option value="1">ПК Комплектующие</option>
+                        <option value="2">Мобильные</option>
+                        <option value="3">Электротехника</option>
+                        <option value="4">Электроинструмент</option>
+                        <option value="5">Рыболовные товары</option>
+                    </select>
+                    <br>
+                    <br>
+
+                    <button type="submit" class="btn btn-primary">Save</button>
+                </form>
+            </div>
+            <div class="col-xs-9 col-sm-9 col-md-9 col-lg-9">
+
+            </div>
+        </div>
+
+    </div>
+
+    <div class="empty"></div>
+</div>
+<footer class="footer">
+    my footer
+</footer>
+
+<!-- scripts -->
+
+<script src="js/jquery-3.1.1.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/main.js"></script>
+
+
+</body>
+</html>
